@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <p id="demo"></p>
+    <script>
+      //object creat
+      const person = {
+        firstname: "john",
+        lastname: "doe",
+        age: 50,
+        eyecolour: "blue",
+        skincolour: "brown",
+        fullname: function () {
+          return this.firstname + " " + this.lastname;
+        },
+      };
+      //acess the object properties
+      console.log(person.firstname);
+      console.log(person["firstname"]);
+      console.log(person["skincolour"]);
+      console.log(person["age"]);
+      console.log(person["lastname"]);
+      console.log = person.fullname();
+      document.getElementById("demo").innerHTML = result;       
+       person.firstname + " " + person.lastname;
+
+
+    </script>
+  </body>
+</html>
